@@ -1,13 +1,16 @@
-h1 {
+* {
 
-   font-size: 40px;
-   color:black;
-
+   margin: 0px;
+   padding: 0px;
+  
 }
 
 p {
 
    color:black;
+   line-height: 1.5;
+   font-family: 'Inter', sans-serif;
+   font-size: 16px;
 
 }
 
@@ -15,5 +18,121 @@ img {
 
    width: 120px;
    height: 220px;
+
+}
+
+header {
+
+   background-color: #e8e8ec;
+   list-style-type: none;
+   padding: 20px;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   width: 100%;
+  
+}
+
+body {
+
+   background-color: #f4f4f6;
+   color: #1a1a1a;
+   font-family: sans-serif;
+   max-width: 1200px;
+   margin: 5px;
+   padding: 0px 50px 25px 0px;
+   font-family: 'Inter', sans-serif;
+   font-size: 16px;
+   line-height: 1.8;
+}
+
+body h1 {
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+   font-size: 45px;
+
+}
+
+body a {
+
+   text-transform: uppercase;
+   text-decoration: none;
+   color: black;
+
+}
+
+body a:hover {
+
+   text-decoration: underline;
+   font-weight: bold;
+   color: blue;
+   transition-duration: 100ms;
+
+}
+
+#apres {
+
+   margin-bottom: 20px;
+   padding-top: 60px;
+
+}
+
+#sobre {
+   padding-top: 60px;
+
+}
+
+#info {
+
+   margin-top: 20px;
+   padding-top: 60px;
+
+}
+
+#habil {
+
+   margin-top: 20px;
+   padding-top: 60px;
+
+}
+
+h1, h2, h3 {
+   
+   font-family: 'Space Grotesk', sans-serif;
+   font-weight: 700;
+   color: #111111;
+}
+
+div {
+
+   list-style-type: none;
+
+}
+
+footer {
+
+   background-color: #e8e8ec;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.icone {
+
+   fill: #e8e8ec;
+   stroke: black;
+   stroke-width: 12px;
+   width: 50px;
+   height: 50px;
+
+}
+
+footer ul {
+
+   display: flex;
+   justify-content: space-around;
+   list-style-type: none;
 
 }
