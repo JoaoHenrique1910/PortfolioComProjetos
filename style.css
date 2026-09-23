@@ -1,138 +1,294 @@
 * {
-
-   margin: 0px;
-   padding: 0px;
-  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p {
-
-   color:black;
-   line-height: 1.5;
-   font-family: 'Inter', sans-serif;
-   font-size: 16px;
-
-}
-
-img {
-
-   width: 120px;
-   height: 220px;
-
-}
-
-header {
-
-   background-color: #e8e8ec;
-   list-style-type: none;
-   padding: 20px;
-   position: fixed;
-   display: flex;
-   justify-content: center;
-   gap: 30px;
-   width: 100%;
-  
+/* EXPLICAÇÃO: Adicionado scroll-behavior para a página descer suavemente ao clicar nos links do menu */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-
-   background-color: #f4f4f6;
-   color: #1a1a1a;
-   font-family: sans-serif;
-   max-width: 1200px;
-   margin: 5px;
-   padding: 0px 50px 25px 0px;
-   font-family: 'Inter', sans-serif;
-   font-size: 16px;
-   line-height: 1.8;
+    background-color: #f4f4f6;
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
-body h1 {
-
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   text-align: center;
-   font-size: 45px;
-
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 10px;
 }
 
-body a {
-
-   text-transform: uppercase;
-   text-decoration: none;
-   color: black;
-
+p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
-body a:hover {
-
-   text-decoration: underline;
-   font-weight: bold;
-   color: blue;
-   transition-duration: 100ms;
-
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #d1d1d5;
+    margin: 40px 0;
 }
 
-#apres {
-
-   margin-bottom: 20px;
-   padding-top: 60px;
-
+/* =========================================
+   CABEÇALHO (HEADER)
+========================================= */
+header {
+    background-color: #e8e8ec;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Garante que o menu fique em cima de todo o resto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    /* Sombrinha leve para dar destaque */
 }
 
-#sobre {
-   padding-top: 60px;
-
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* Permite que os links "caiam" para a linha de baixo se não couberem */
 }
 
-#info {
-
-   margin-top: 20px;
-   padding-top: 60px;
-
+header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
 }
 
-#habil {
-
-   margin-top: 20px;
-   padding-top: 60px;
-
+header a:hover {
+    color: #0056b3;
+    /* Um azul elegante em vez do azul padrão */
+    text-decoration: none;
 }
 
-h1, h2, h3 {
-   
-   font-family: 'Space Grotesk', sans-serif;
-   font-weight: 700;
-   color: #111111;
+/* =========================================
+   CONTEÚDO PRINCIPAL (MAIN E SEÇÕES)
+========================================= */
+main {
+    /* EXPLICAÇÃO: Em vez de max-width no body, usamos no main e centralizamos com 'margin: 0 auto'. 
+       O padding-top compensa o header fixo para o texto não sumir atrás dele. */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px 40px 20px;
 }
 
-div {
-
-   list-style-type: none;
-
+section {
+    margin-bottom: 50px;
 }
 
+section h2 {
+    font-size: 32px;
+    border-bottom: 2px solid #0056b3;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+/* --- SEÇÃO SOBRE --- */
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.sobre-texto h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.foto-perfil {
+    /* EXPLICAÇÃO: Arrumando a proporção da imagem. Em vez de espremer, 
+       ela fica redonda e se ajusta com object-fit: cover */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e8e8ec;
+    flex-shrink: 0;
+    /* Impede que a foto esprema quando a tela diminuir */
+}
+
+/* --- SEÇÃO PROJETOS (A NOVA SEÇÃO QUE VOCÊ PEDIU) --- */
+.grid-projetos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-projeto {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    flex: 1;
+    min-width: 280px;
+    /* Garante que não fique fino demais no celular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* Efeito de elevação leve */
+    border: 1px solid #e8e8ec;
+}
+
+.card-projeto a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-projeto a:hover {
+    text-decoration: underline;
+}
+
+/* --- HABILIDADES --- */
+.flex-habilidades {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box-habilidade {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #e8e8ec;
+}
+
+.box-habilidade ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+/* --- TRAJETÓRIA --- */
+.item-trajetoria {
+    margin-bottom: 25px;
+}
+
+.item-trajetoria h5 {
+    color: #0056b3;
+    font-size: 16px;
+}
+
+/* --- CONTATO --- */
+.links-contato {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.btn-contato {
+    background-color: #0056b3;
+    color: white !important;
+    /* Importante para sobrepor regras anteriores */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: #004494;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.dados-contato h3 {
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* =========================================
+   RODAPÉ (FOOTER)
+========================================= */
 footer {
+    background-color: #e8e8ec;
+    display: flex;
+    flex-direction: column;
+    /* Coloca o texto em cima e os ícones embaixo */
+    align-items: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    gap: 15px;
+}
 
-   background-color: #e8e8ec;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.redes-footer {
+    display: flex;
+    gap: 20px;
+    list-style: none;
 }
 
 .icone {
-
-   fill: #e8e8ec;
-   stroke: black;
-   stroke-width: 12px;
-   width: 50px;
-   height: 50px;
-
+    fill: #1a1a1a;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.2s;
 }
 
-footer ul {
+.icone:hover {
+    transform: scale(1.3);
+}
 
-   display: flex;
-   justify-content: space-around;
-   list-style-type: none;
+@media (max-width: 768px) {
 
+    header nav {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .sobre-conteudo {
+        padding-top: 30px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .sobre-texto h1 {
+        font-size: 32px;
+    }
+
+    .foto-perfil {
+        width: 180px;
+        height: 180px;
+    }
+
+    .links-contato {
+        flex-direction: column;
+    }
+
+    .btn-contato {
+        text-align: center;
+        width: 100%;
+    }
+
+    .dados-contato {
+        font-size: 15px;
+
+    }
 }
