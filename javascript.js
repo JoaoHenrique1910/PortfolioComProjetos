@@ -1,37 +1,20 @@
-const titulo = document.querySelector('#nome-digitado');
+var meuTitulo = document.getElementById("Corpo");
+let botaoSimples = document.getElementById("simples");
 
-function ativarMaquinaDeEscrever(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    
-    textoArray.forEach((letra, index) => {
-        setTimeout(() => {
-            elemento.innerHTML += letra;
-        }, 75 * index);
-    });
+let modoEscuroAtivado = false;
+
+botaoSimples.onclick = trocaClasse
+
+function trocaClasse() {
+    if(modoEscuroAtivado == true) {
+        meuTitulo.classList.remove("modoEscuro");
+        meuTitulo.classList.add("modoClaro");
+
+        modoEscuroAtivado = false;
+    } else {
+        meuTitulo.classList.remove("modoClaro");
+        meuTitulo.classList.add("modoEscuro");
+
+        modoEscuroAtivado = true;
+    }
 }
-
-if (titulo) {
-    ativarMaquinaDeEscrever(titulo);
-}
-
-
-/* ==========================================
-   2. ANIMAÇÃO DE SCROLL (Elementos aparecendo)
-========================================== */
-const observador = new IntersectionObserver((entradas) => {
-    entradas.forEach((entrada) => {
-        // Se o elemento entrou na tela do usuário...
-        if (entrada.isIntersecting) {
-            entrada.target.classList.add('mostrar'); // O CSS faz ele aparecer
-        }
-    });
-});
-
-// Pega todas as <sections> que receberam a classe 'escondido' no HTML
-const elementosEscondidos = document.querySelectorAll('.escondido');
-
-// Manda o observador vigiar cada uma delas
-elementosEscondidos.forEach((elemento) => {
-    observador.observe(elemento);
-});

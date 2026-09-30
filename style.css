@@ -1,10 +1,7 @@
 * {
-
-    margin: 0;
-
-    padding: 0;
-
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 
 }
 
@@ -21,13 +18,9 @@ html {
 body {
 
     background-color: #f4f4f6;
-
     color: #1a1a1a;
-
     font-family: 'Inter', sans-serif;
-
     font-size: 16px;
-
     line-height: 1.8;
 
 }
@@ -35,22 +28,15 @@ body {
 
 
 h1,
-
 h2,
-
 h3,
-
 h4,
 {
 
 font-family: 'Space Grotesk', sans-serif;
-
 font-size: medium;
-
 font-weight: 700;
-
 color: #111111;
-
 margin-bottom: 10px;
 
 }
@@ -60,13 +46,9 @@ margin-bottom: 10px;
 h5 {
 
     font-family: 'Space Grotesk', sans-serif;
-
     font-weight: 700;
-
     font-size: medium;
-
     color: #004494;
-
     margin-bottom: 10px;
 
 }
@@ -76,9 +58,7 @@ h5 {
 p {
 
     color: #333;
-
     line-height: 1.6;
-
     margin-bottom: 15px;
 
 }
@@ -88,11 +68,8 @@ p {
 hr {
 
     border: 0;
-
     height: 1px;
-
     background-color: #d1d1d5;
-
     margin: 40px 0;
 
 }
@@ -102,17 +79,11 @@ hr {
 header {
 
     background-color: #e8e8ec;
-
     padding: 20px;
-
     position: fixed;
-
     top: 0;
-
     width: 100%;
-
     z-index: 1000;
-
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 
 }
@@ -122,11 +93,8 @@ header {
 header nav {
 
     display: flex;
-
     justify-content: center;
-
     gap: 30px;
-
     flex-wrap: wrap;
 
 }
@@ -136,15 +104,10 @@ header nav {
 header a {
 
     text-transform: uppercase;
-
     text-decoration: none;
-
     color: black;
-
     font-weight: 500;
-
     font-size: 14px;
-
     transition: color 0.3s ease;
 
 }
@@ -154,7 +117,6 @@ header a {
 header a:hover {
 
     color: #0056b3;
-
     text-decoration: none;
 
 }
@@ -164,9 +126,7 @@ header a:hover {
 main {
 
     max-width: 1000px;
-
     margin: 0 auto;
-
     padding: 100px 20px 40px 20px;
 
 }
@@ -184,11 +144,8 @@ section {
 section h2 {
 
     font-size: 32px;
-
     border-bottom: 2px solid #0056b3;
-
     display: inline-block;
-
     margin-bottom: 30px;
 
 }
@@ -198,11 +155,8 @@ section h2 {
 .sobre-conteudo {
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 40px;
 
 }
@@ -212,7 +166,6 @@ section h2 {
 .sobre-texto h1 {
 
     font-size: 40px;
-
     margin-bottom: 20px;
 
 }
@@ -222,15 +175,10 @@ section h2 {
 .foto-perfil {
 
     width: 250px;
-
     height: 250px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
     border: 5px solid #e8e8ec;
-
     flex-shrink: 0;
 
 }
@@ -240,9 +188,7 @@ section h2 {
 .grid-projetos {
 
     display: flex;
-
     gap: 20px;
-
     flex-wrap: wrap;
 
 }
@@ -252,17 +198,11 @@ section h2 {
 .card-projeto {
 
     background-color: #ffffff;
-
     border-radius: 8px;
-
     padding: 25px;
-
     flex: 1;
-
     min-width: 280px;
-
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-
     border: 1px solid #e8e8ec;
 
 }
@@ -272,13 +212,9 @@ section h2 {
 .card-projeto a {
 
     display: inline-block;
-
     margin-top: 15px;
-
     color: #0056b3;
-
     text-decoration: none;
-
     font-weight: bold;
 
 }
@@ -296,9 +232,7 @@ section h2 {
 .flex-habilidades {
 
     display: flex;
-
     gap: 40px;
-
     flex-wrap: wrap;
 
 }
@@ -308,15 +242,10 @@ section h2 {
 .box-habilidade {
 
     background-color: #ffffff;
-
     padding: 25px;
-
     border-radius: 8px;
-
     flex: 1;
-
     min-width: 250px;
-
     border: 1px solid #e8e8ec;
 
 }
@@ -326,9 +255,7 @@ section h2 {
 .box-habilidade ul {
 
     list-style-type: disc;
-
     padding-left: 20px;
-
     margin-top: 15px;
 
 }
@@ -346,7 +273,6 @@ section h2 {
 .item-trajetoria h5 {
 
     color: #0056b3;
-
     font-size: 16px;
 
 }
@@ -356,11 +282,8 @@ section h2 {
 .links-contato {
 
     display: flex;
-
     gap: 15px;
-
     flex-wrap: wrap;
-
     margin-bottom: 30px;
 
 }
@@ -370,17 +293,11 @@ section h2 {
 .btn-contato {
 
     background-color: #0056b3;
-
     color: white !important;
-
     padding: 10px 20px;
-
     border-radius: 5px;
-
     text-decoration: none;
-
     font-weight: 500;
-
     transition: background 0.3s;
 
 }
@@ -390,9 +307,7 @@ section h2 {
 .btn-contato:hover {
 
     background-color: #004494;
-
     text-decoration: none;
-
     transform: scale(1.1);
 
 }
@@ -402,11 +317,15 @@ section h2 {
 .dados-contato h3 {
 
     font-weight: 500;
-
     font-family: 'Inter', sans-serif;
-
     color: #333;
 
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -414,17 +333,11 @@ section h2 {
 footer {
 
     background-color: #e8e8ec;
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     padding: 30px 20px;
-
     margin-top: 40px;
-
     gap: 15px;
 
 }
@@ -434,7 +347,6 @@ footer {
 footer p {
 
     margin: 0;
-
     font-size: 14px;
 
 }
@@ -444,9 +356,7 @@ footer p {
 .redes-footer {
 
     display: flex;
-
     gap: 20px;
-
     list-style: none;
 
 }
@@ -456,11 +366,8 @@ footer p {
 .icone {
 
     fill: #1a1a1a;
-
     width: 35px;
-
     height: 35px;
-
     transition: transform 0.2s;
 
 }
@@ -482,7 +389,6 @@ footer p {
     header nav {
 
         gap: 15px;
-
         font-size: 12px;
 
     }
@@ -492,9 +398,7 @@ footer p {
     .sobre-conteudo {
 
         padding-top: 30px;
-
         flex-direction: column-reverse;
-
         text-align: center;
 
     }
@@ -512,7 +416,6 @@ footer p {
     .foto-perfil {
 
         width: 180px;
-
         height: 180px;
 
     }
@@ -530,7 +433,6 @@ footer p {
     .btn-contato {
 
         text-align: center;
-
         width: 100%;
 
     }
@@ -540,9 +442,6 @@ footer p {
     .dados-contato {
 
         font-size: 15px;
-
-
-
     }
 
 }
