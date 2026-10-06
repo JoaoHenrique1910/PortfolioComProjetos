@@ -4,7 +4,7 @@ Eu sou o João Henrique. Este espaço é o meu cantinho na internet para mostrar
 
 Aqui eu juntei o que venho aprendendo para criar páginas que sejam organizadas e agradáveis de navegar.
 
-🔗 [Venha dar uma olhada no meu portfólio online](https://github.io)
+🔗 [Venha dar uma olhada no meu portfólio online](https://joaohenrique1910.github.io/PortfolioComProjetos/)
 
 ---
 
@@ -37,7 +37,7 @@ Além de me conhecer melhor, este portfólio guarda os projetos práticos que fa
 
 Estou me preparando para encontrar minha primeira oportunidade na área de tecnologia (como estágio ou suporte júnior). Se você quiser trocar uma ideia, me dar uma dica ou bater um papo sobre programação, vai ser um prazer:
 
-* **LinkedIn:** (https://www.linkedin.com/in/jo%C3%A3o-henrique-pereira-freitas-955ab0358/?isSelfProfile=true)
+* **LinkedIn:** [Venha dar uma olhada no meu portfólio online](https://www.linkedin.com/in/jo%C3%A3o-henrique-pereira-freitas-955ab0358/?isSelfProfile=true)
 * **E-mail:** contatojoaohenriquefreitas@gmail.com
 * **Whatsapp:** +55 (11) 91056-3945
 * **GitHub:** ([https://github.com](https://github.com/JoaoHenrique1910)
