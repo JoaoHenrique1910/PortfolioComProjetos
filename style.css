@@ -1,0 +1,436 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: background-color 0.4s ease, color 0.4 ease;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    color: var(--cor-titulos);
+    margin-bottom: 10px;
+
+}
+
+h5 {
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    color: #004494;
+    margin-bottom: 10px;
+
+}
+
+p {
+
+    color: var(--cor-texto);
+    line-height: 1.6;
+    margin-bottom: 15px;
+
+}
+
+hr {
+
+    border: 0;
+    height: 1px;
+    background-color: #d1d1d5;
+    margin: 40px 0;
+
+}
+
+header {
+
+    background-color: var(--cor-elementos);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+}
+
+header nav {
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+header a {
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor-titulos);
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s ease;
+
+}
+
+header a:hover {
+
+    color: #0056b3;
+    text-decoration: none;
+
+}
+
+main {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 20px 40px 20px;
+
+}
+
+section {
+    margin-bottom: 50px;
+
+}
+
+section h2 {
+
+    font-size: 32px;
+    border-bottom: 2px solid #0056b3;
+    display: inline-block;
+    margin-bottom: 30px;
+
+}
+
+:root {
+
+    --cor-fundo: #ffffff;
+    --cor-texto: #121212;
+    --cor-azul: #1e1a8a;
+    --cor-titulos: #111111;
+    --cor-elementos: #e8e8ec;
+    --cor-cartoes: #ffffff;
+
+}
+
+body.tema-escuro {
+
+    --cor-fundo: #121212;
+    --cor-texto: #ffffff;
+    --cor-titulos: #ffffff;
+    --cor-elementos: #1a1a1a;
+    --cor-cartoes: #222222;
+
+}
+
+.botaoTema {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.sobreConteudo {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.sobreTexto h1 {
+
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+.fotoPerfil {
+
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--cor-elementos);
+    flex-shrink: 0;
+
+}
+
+.gridProjetos {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.cardProjeto {
+
+    background-color: var(--cor-cartoes);
+    border-radius: 8px;
+    padding: 25px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+}
+
+.cardProjeto:hover {
+
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.cardProjeto a {
+
+    display: inline-block;
+    margin-top: 15px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.cardProjeto a:hover {
+
+    text-decoration: underline;
+    transform: scale(1.05);
+
+}
+
+.flexHabilidades {
+
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+.boxHabilidade {
+
+    background-color: var(--cor-cartoes);
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    
+}
+
+.boxHabilidade:hover {
+
+    background-color: var(--cor-cartoes);
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    transform: scale(1.02);
+
+}
+
+.boxHabilidade ul {
+
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 15px;
+
+}
+
+.itemTrajetoria {
+
+    margin-bottom: 25px;
+
+}
+
+.itemTrajetoria h5 {
+
+    color: #0056b3;
+    font-size: 16px;
+
+}
+
+.linksContato {
+
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+
+.btnContato {
+
+    background-color: #0056b3;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+
+}
+
+.btnContato:hover {
+
+    background-color: #004494;
+    text-decoration: none;
+    transform: scale(1.1);
+
+}
+
+.dadosContato h3 {
+
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+
+}
+
+.botaoTema {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;  
+    height: 30px; 
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botaoTema img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.5s cubic-bezier(0.70, -0.55, 0.265, 1.35);
+}
+
+.iconeLua {
+    transform: translateY(0); 
+}
+
+.iconeSol {
+    transform: translateY(-150%);
+}
+
+body.tema-escuro .iconeLua {
+    transform: translateY(150%);
+}
+
+body.tema-escuro .iconeSol {
+    transform: translateY(0);
+    filter: brightness(0) invert(1);
+}
+
+footer {
+
+    background-color: var(--cor-elementos);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    gap: 15px;
+
+}
+
+footer p {
+
+    margin: 0;
+    font-size: 14px;
+
+}
+
+.redesFooter {
+
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.icone {
+
+    fill: var(--cor-titulos);
+    width: 35px;
+    height: 35px;
+    transition: fill 0.4s ease, transform 0.2s;
+
+}
+
+.icone:hover {
+
+    transform: scale(1.3);
+
+}
+
+@media (max-width: 768px) {
+
+    header nav {
+
+        gap: 15px;
+        font-size: 12px;
+
+    }
+
+    .sobreConteudo {
+
+        padding-top: 30px;
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+
+    .sobreTexto h1 {
+
+        font-size: 32px;
+
+    }
+
+    .fotoPerfil {
+
+        width: 180px;
+        height: 180px;
+
+    }
+
+    .linksContato {
+
+        flex-direction: column;
+
+    }
+
+    .btnContato {
+
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .dadosContato {
+
+        font-size: 15px;
+    }
+
+}
