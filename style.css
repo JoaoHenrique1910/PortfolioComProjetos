@@ -5,25 +5,46 @@
     box-sizing: border-box;
 }
 
+:root {
+
+    --cor-fundo: #ffffff;
+    --cor-texto: #121212;
+    --cor-azul: #1e1a8a;
+    --cor-titulos: #111111;
+    --cor-elementos: #f8f8f8;
+    --cor-cartoes: #ffffff;
+
+}
+
+body.tema-escuro {
+
+    --cor-fundo: #121212;
+    --cor-texto: #ffffff;
+    --cor-titulos: #ffffff;
+    --cor-elementos: #1a1a1a;
+    --cor-cartoes: #222222;
+
+}
+
 html {
 
-    scroll-behavior: smooth;
+     scroll-behavior: smooth;
+     scroll-padding-top: 100px;
+
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    transition: background-color 0.4s ease, color 0.4 ease;
+
+     font-family: 'Inter', sans-serif;
+     font-size: 16px;
+     line-height: 1.8;
+     background-color: var(--cor-fundo);
+     color: var(--cor-texto);
+     transition: background-color 0.4s ease, color 0.4s ease;
 
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
 
     font-family: 'Space Grotesk', sans-serif;
     font-size: medium;
@@ -103,7 +124,7 @@ main {
 
     max-width: 1000px;
     margin: 0 auto;
-    padding: 100px 20px 40px 20px;
+    padding: 100px 20px 5px 20px;
 
 }
 
@@ -121,28 +142,8 @@ section h2 {
 
 }
 
-:root {
-
-    --cor-fundo: #ffffff;
-    --cor-texto: #121212;
-    --cor-azul: #1e1a8a;
-    --cor-titulos: #111111;
-    --cor-elementos: #e8e8ec;
-    --cor-cartoes: #ffffff;
-
-}
-
-body.tema-escuro {
-
-    --cor-fundo: #121212;
-    --cor-texto: #ffffff;
-    --cor-titulos: #ffffff;
-    --cor-elementos: #1a1a1a;
-    --cor-cartoes: #222222;
-
-}
-
 .botaoTema {
+
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -160,7 +161,7 @@ body.tema-escuro {
 
 .sobreTexto h1 {
 
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 20px;
 
 }
@@ -171,8 +172,18 @@ body.tema-escuro {
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid var(--cor-elementos);
+    border: 3px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
     flex-shrink: 0;
+    object-position: 0% 70%;
+
+}
+
+.fotoPerfil:hover {
+
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #0056b3;
 
 }
 
@@ -186,7 +197,7 @@ body.tema-escuro {
 
 .cardProjeto {
 
-    background-color: var(--cor-cartoes);
+    background-color: var(--cor-elementos);
     border-radius: 8px;
     padding: 25px;
     flex: 1;
@@ -229,17 +240,17 @@ body.tema-escuro {
 
 .boxHabilidade {
 
-    background-color: var(--cor-cartoes);
+    background-color: var(--cor-elementos);
     padding: 25px;
     border-radius: 8px;
     flex: 1;
     min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     
 }
 
 .boxHabilidade:hover {
 
-    background-color: var(--cor-cartoes);
     padding: 25px;
     border-radius: 8px;
     flex: 1;
@@ -302,11 +313,12 @@ body.tema-escuro {
 
     font-weight: 500;
     font-family: 'Inter', sans-serif;
-    color: #333;
+    color: var(--cor-textotexto);
 
 }
 
 .botaoTema {
+
     background: none;
     border: none;
     cursor: pointer;
@@ -320,6 +332,7 @@ body.tema-escuro {
     justify-content: center;
 }
 .botaoTema img {
+
     position: absolute;
     width: 24px;
     height: 24px;
@@ -327,18 +340,22 @@ body.tema-escuro {
 }
 
 .iconeLua {
+
     transform: translateY(0); 
 }
 
 .iconeSol {
+
     transform: translateY(-150%);
 }
 
 body.tema-escuro .iconeLua {
+
     transform: translateY(150%);
 }
 
 body.tema-escuro .iconeSol {
+
     transform: translateY(0);
     filter: brightness(0) invert(1);
 }
@@ -350,7 +367,6 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 30px 20px;
-    margin-top: 40px;
     gap: 15px;
 
 }
@@ -362,27 +378,33 @@ footer p {
 
 }
 
-.redesFooter {
+.btnContato {
 
+    background-color: #0056b3;
+    color: white !important;
+    padding: 12px 24px; /* Aumentei um pouco o padding para o botão ficar mais gordinho */
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
     display: flex;
-    gap: 20px;
-    list-style: none;
-
+    align-items: center; 
+    justify-content: center;
+    gap: 5px;
 }
 
-.icone {
+.btnContato:hover {
 
-    fill: var(--cor-titulos);
-    width: 35px;
-    height: 35px;
-    transition: fill 0.4s ease, transform 0.2s;
-
+    background-color: #004494;
+    text-decoration: none;
+    transform: scale(1.05);
 }
 
-.icone:hover {
-
-    transform: scale(1.3);
-
+.iconeBotao {
+    
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); 
 }
 
 @media (max-width: 768px) {
