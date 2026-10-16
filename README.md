@@ -1,6 +1,6 @@
 # Olá, tudo bem? 😊
 
-Eu sou o João Henrique. Este espaço é o meu cantinho na internet para mostrar o meu portfólio pessoal.Este projeto representa o meu começo, com muito carinho, no universo da tecnologia.
+Eu sou o João Henrique, este projeto representa o meu começo, um simples portifolio.
 
 Aqui eu juntei o que venho aprendendo para criar páginas que sejam organizadas e agradáveis de navegar.
 
@@ -23,7 +23,7 @@ Decidi fazer tudo do zero absoluto, sem usar nenhuma ferramenta pronta, para apr
 
 * **HTML5:** Para dar estrutura e sentido para a página.
 * **CSS3:** Para escolher as cores, ajustar as fontes (usei a *Inter* e a *Space Grotesk*) e garantir que o site fique bonito e confortável de ler tanto no computador quanto na tela de um celular.
-* **JavaScript:** Que estou usando para começar a dar vida e interatividade aos meus projetos. ( Porém não foi totalmente utilizado no Portifolio )
+* **JavaScript:** Que estou usando para começar a dar vida e interatividade aos meus projetos.
 
 ---
 
