@@ -161,35 +161,66 @@
 
             </div>
         </section>
-        <section id="habil">
-            <h2>Meus Projetos</h2>
-            <p>Meus projetos feitos:</p>
+        <section id="projetos">
+            <h2>Projetos</h2>
             <div class="gridProjetos">
+                
                 <div class="cardProjeto">
-                    <h3>Projeto "Guia"</h3>
-                    <a href="https://joaohenrique1910.github.io/Guia/" target="_blank">Ver Projeto Online</a>
-                    <br>
-                    <a href="https://github.com/JoaoHenrique1910/Guia" target="_blank">Ver Código no GitHub</a>
+                    <div class="infoProjeto">
+                        <h3>Padoka Mágica</h3>
+                        <p>Aplicação web responsiva com tema claro/escuro e navegação interativa.</p>
+                        <div class="tagsProjeto">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button class="btnAbrirModal" data-url="https://padaria-joao.vercel.app/" data-repo="https://github.com/JoaoHenrique1910/ProjetoVercel">Pré-visualizar</button>
+                    </div>
                 </div>
+        
                 <div class="cardProjeto">
-                    <h3>Projeto "Reaproveita"</h3>
-                    <a href="https://monstros-s-a.github.io/integrador/" target="_blank">Ver Projeto Online</a>
-                    <br>
-                    <a href="https://github.com/Monstros-s-a/integrador" target="_blank">Ver Código no GitHub</a>
+                    <div class="infoProjeto">
+                        <h3>Guia de Bolso Git</h3>
+                        <p>Guia de referência rápida e prática reunindo os principais comandos e fluxos do Git.</p>
+                        <div class="tagsProjeto">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Markdown</span>
+                        </div>
+                        <button class="btnAbrirModal" data-url="https://joaohenrique1910.github.io/Guia/" data-repo="https://github.com/JoaoHenrique1910/Guia">Pré-visualizar</button>
+                    </div>
                 </div>
+        
                 <div class="cardProjeto">
-                    <h3>Projeto "Padoka Mágica"</h3>
-                    <a href="https://padaria-joao.vercel.app/" target="_blank">Ver Projeto Online</a>
-                    <br>
-                    <a href="https://github.com/JoaoHenrique1910/ProjetoVercel" target="_blank">Ver Código no GitHub</a>
+                    <div class="infoProjeto">
+                        <h3>Reaproveita</h3>
+                        <p>Plataforma web integradora focada em sustentabilidade e reaproveitamento de materiais.</p>
+                        <div class="tagsProjeto">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button class="btnAbrirModal" data-url="https://monstros-s-a.github.io/integrador/" data-repo="https://github.com/Monstros-s-a/integrador">Pré-visualizar</button>
+                    </div>
                 </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
+        
             </div>
         </section>
+        
+        <div id="modalProjeto" class="modal">
+            <div class="modalConteudo">
+                <div class="modalCabecalho">
+                    <div class="modalBotoes">
+                        <a href="#" id="linkRepo" target="_blank" class="btnSecundario">Ver Código (GitHub)</a>
+                        <a href="#" id="linkNovaAba" target="_blank" class="btnPrimario">Abrir em Nova Aba</a>
+                    </div>
+                    <button class="fecharModal">&times;</button>
+                </div>
+                <div class="areaIframe">
+                    <iframe id="iframeProjeto" src="" title="Pré-visualização do Projeto"></iframe>
+                </div>
+            </div>
+        </div>
         <section id="info">
             <h2>Redes Sociais e Contatos</h2>
             <div class="linksContato">
@@ -211,6 +242,22 @@
     <footer>
         <p>© 2026 João Henrique. Todos os direitos reservados.</p>
     </footer>
+
+    <div id="modalProjeto" class="modal">
+        <div class="modalConteudo">
+            <div class="modalCabecalho">
+                <div class="modalBotoes">
+                    <a href="#" id="linkRepo" target="_blank" class="btnSecundario">Ver Código (GitHub)</a>
+                    <a href="#" id="linkNovaAba" target="_blank" class="btnPrimario">Abrir em Nova Aba</a>
+                </div>
+                <button class="fecharModal">&times;</button>
+            </div>
+            <div class="areaIframe">
+                <iframe id="iframeProjeto" src="" title="Pré-visualização do Projeto"></iframe>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
