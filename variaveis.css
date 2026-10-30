@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "PlusJakarta";
+    src: url("../PortfolioComProjetos/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --cor-fundo: #ffffff;
+    --cor-texto: #121212;
+    --cor-azul: #0a02d8;
+    --cor-titulos: #111111;
+    --cor-elementos: #f8f8f8;
+    --cor-cartoes: #ffffff;
+    
+    --cor-primaria: var(--cor-azul);
+    --cor-primaria-hover: #151165;
+    --cor-textotexto: #555555;
+    --cor-borda-hr: #d1d1d5;
+    --cor-texto-botao: #ffffff;
+
+    --sombra-leve: 0 2px 5px rgba(0, 0, 0, 0.05);
+    --sombra-media: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --sombra-forte: 0 6px 12px rgba(0, 0, 0, 0.1);
+    --sombra-perfil: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    --fonte-principal: 'PlusJakarta', 'Inter', sans-serif;
+    --fonte-titulos: 'PlusJakarta', 'Space Grotesk', sans-serif;
+}
+
+body.tema-escuro {
+    --cor-fundo: #121212;
+    --cor-texto: #ffffff;
+    --cor-titulos: #ffffff;
+    --cor-elementos: #1a1a1a;
+    --cor-cartoes: #222222;
+    
+    --cor-textotexto: #aaaaaa;
+    --cor-borda-hr: #333333;
+}
