@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "PlusJakarta";
-    src: url("../PortfolioComProjetos/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+    src: url("./fonts/PlusJakartaSans-Bold.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -14,7 +14,7 @@
     --cor-azul: #0a02d8;
     --cor-titulos: #111111;
     --cor-elementos: #f8f8f8;
-    --cor-cartoes: #ffffff;
+    --cor-cartoes: #f7f7f7;
     
     --cor-primaria: var(--cor-azul);
     --cor-primaria-hover: #151165;
