@@ -20,10 +20,7 @@ body {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-.nomeTitulo {
-    font-family: var(--fonte-titulos);
-}
-
+.nomeTitulo,
 h1,
 h2,
 h3,
@@ -133,37 +130,13 @@ section h2 {
     border: 3px solid var(--cor-primaria);
 }
 
-.gridProjetos {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+.itemTrajetoria {
+    margin-bottom: 25px;
 }
 
-.cardProjeto {
-    background-color: var(--cor-cartoes);
-    border-radius: 8px;
-    padding: 25px;
-    flex: 1;
-    min-width: 280px;
-    box-shadow: var(--sombra-media);
-}
-
-.cardProjeto:hover {
-    transform: scale(1.02);
-    box-shadow: var(--sombra-forte);
-}
-
-.cardProjeto a {
-    display: inline-block;
-    margin-top: 15px;
+.itemTrajetoria h5 {
     color: var(--cor-primaria);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cardProjeto a:hover {
-    text-decoration: underline;
-    transform: scale(1.05);
+    font-size: 16px;
 }
 
 .flexHabilidades {
@@ -230,177 +203,10 @@ section h2 {
     color: var(--cor-texto);
 }
 
-.itemTrajetoria {
-    margin-bottom: 25px;
-}
-
-.itemTrajetoria h5 {
-    color: var(--cor-primaria);
-    font-size: 16px;
-}
-
-.linksContato {
+.gridProjetos {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 30px;
-}
-
-.dadosContato h3 {
-    font-weight: 500;
-    font-family: var(--fonte-principal);
-    color: var(--cor-textotexto);
-}
-
-.btnContato {
-    background-color: var(--cor-primaria);
-    color: var(--cor-texto-botao) !important;
-    padding: 12px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.3s, transform 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.btnContato:hover {
-    background-color: var(--cor-primaria-hover);
-    text-decoration: none;
-    transform: scale(1.05);
-}
-
-.iconeBotao {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1);
-}
-
-.botaoTema {
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    overflow: hidden;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.botaoTema img {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    transition: transform 0.5s cubic-bezier(0.70, -0.55, 0.265, 1.35);
-}
-
-.iconeLua {
-    transform: translateY(0);
-}
-
-.iconeSol {
-    transform: translateY(-150%);
-}
-
-.containerCurriculo {
-    position: relative;
-    display: inline-block;
-}
-
-.menuSuspenso {
-    display: none;
-    position: absolute;
-    bottom: 110%;
-    left: 0;
-    background-color: var(--cor-elementos);
-    min-width: 180px;
-    box-shadow: var(--sombra-forte);
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 100;
-    border: 1px solid var(--cor-borda-hr);
-}
-
-.menuSuspenso.ativo {
-    display: block;
-}
-
-.menuSuspenso a {
-    color: var(--cor-texto) !important;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-    transition: background-color 0.2s;
-}
-
-.menuSuspenso a:hover {
-    background-color: var(--cor-primaria);
-    color: var(--cor-texto-botao) !important;
-}
-
-body.tema-escuro .iconeLua {
-    transform: translateY(150%);
-}
-
-body.tema-escuro .iconeSol {
-    transform: translateY(0);
-    filter: brightness(0) invert(1);
-}
-
-footer {
-    background-color: var(--cor-elementos);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 20px;
-    gap: 15px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-@media (max-width: 768px) {
-    header nav {
-        gap: 15px;
-        font-size: 12px;
-    }
-
-    .sobreConteudo {
-        padding-top: 30px;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .sobreTexto h1 {
-        font-size: 32px;
-    }
-
-    .fotoPerfil {
-        width: 180px;
-        height: 180px;
-    }
-
-    .linksContato {
-        flex-direction: column;
-    }
-
-    .btnContato {
-        text-align: center;
-        width: 100%;
-    }
-
-    .dadosContato {
-        font-size: 15px;
-    }
 }
 
 .cardProjeto {
@@ -506,6 +312,7 @@ footer p {
         transform: scale(0.95);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -579,13 +386,256 @@ footer p {
     border: none;
 }
 
+.linksContato {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.dadosContato h3 {
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    color: var(--cor-textotexto);
+}
+
+.btnContato {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-botao) !important;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btnContato:hover {
+    background-color: var(--cor-primaria-hover);
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.iconeBotao {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+.containerCurriculo {
+    position: relative;
+    display: inline-block;
+}
+
+.menuSuspenso {
+    display: none;
+    position: absolute;
+    bottom: 110%;
+    left: 0;
+    background-color: var(--cor-elementos);
+    min-width: 180px;
+    box-shadow: var(--sombra-forte);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 100;
+    border: 1px solid var(--cor-borda-hr);
+}
+
+.menuSuspenso.ativo {
+    display: block;
+}
+
+.menuSuspenso a {
+    color: var(--cor-texto) !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.menuSuspenso a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-botao) !important;
+}
+
+.botaoTema {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoTema img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.5s cubic-bezier(0.70, -0.55, 0.265, 1.35);
+}
+
+.iconeLua {
+    transform: translateY(0);
+}
+
+.iconeSol {
+    transform: translateY(-150%);
+}
+
+body.tema-escuro .iconeLua {
+    transform: translateY(150%);
+}
+
+body.tema-escuro .iconeSol {
+    transform: translateY(0);
+    filter: brightness(0) invert(1);
+}
+
+.filtrosCertificados {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.btnFiltro {
+    background-color: var(--cor-elementos);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-borda-hr);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnFiltro:hover {
+    border-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+.btnFiltro.ativo {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-botao);
+    border-color: var(--cor-primaria);
+}
+
+.gridCertificados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.cardCertificado {
+    background-color: var(--cor-cartoes);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: var(--sombra-media);
+    border: 1px solid var(--cor-borda-hr);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardCertificado:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-forte);
+}
+
+.headerCertificado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
+.statusBadge {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.statusBadge.andamento {
+    background-color: rgba(37, 99, 235, 0.15);
+    color: var(--cor-primaria);
+}
+
+.statusBadge.concluido {
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+}
+
+.emissorCertificado {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--cor-textotexto);
+}
+
+.cardCertificado h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cardCertificado p {
+    font-size: 14px;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.tagsCertificado {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.tagsCertificado span {
+    background-color: var(--cor-elementos);
+    color: var(--cor-primaria);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-borda-hr);
+}
+
+.btnLinkCertificado {
+    display: inline-block;
+    color: var(--cor-primaria);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.btnLinkCertificado:hover {
+    color: var(--cor-primaria-hover);
+    text-decoration: underline;
+}
+
 ::view-transition-old(root) {
     animation: none;
     z-index: 1;
 }
 
 ::view-transition-new(root) {
-    animation: revelarNovoTema  2.0s ease-in-out;
+    animation: revelarNovoTema 2.0s ease-in-out;
     z-index: 2;
 }
 
@@ -598,5 +648,54 @@ footer p {
     to {
         -webkit-clip-path: circle(150% at var(--x, 50%) var(--y, 50%));
         clip-path: circle(150% at var(--x, 50%) var(--y, 50%));
+    }
+}
+
+footer {
+    background-color: var(--cor-elementos);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .sobreConteudo {
+        padding-top: 30px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .sobreTexto h1 {
+        font-size: 32px;
+    }
+
+    .fotoPerfil {
+        width: 180px;
+        height: 180px;
+    }
+
+    .linksContato {
+        flex-direction: column;
+    }
+
+    .btnContato {
+        text-align: center;
+        width: 100%;
+    }
+
+    .dadosContato {
+        font-size: 15px;
     }
 }

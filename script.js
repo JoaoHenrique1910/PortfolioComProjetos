@@ -74,4 +74,27 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    const botoesFiltro = document.querySelectorAll('.btnFiltro');
+    const cardsCertificados = document.querySelectorAll('.cardCertificado');
+
+    if (botoesFiltro.length > 0 && cardsCertificados.length > 0) {
+        botoesFiltro.forEach(botao => {
+            botao.addEventListener('click', () => {
+                botoesFiltro.forEach(b => b.classList.remove('ativo'));
+                botao.classList.add('ativo');
+
+                const filtro = botao.getAttribute('data-filtro');
+
+                cardsCertificados.forEach(card => {
+                    const categoria = card.getAttribute('data-categoria');
+                    if (filtro === 'todos' || filtro === categoria) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
 });
